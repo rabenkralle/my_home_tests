@@ -3,9 +3,8 @@
 
 def max_number(number_1, number_2, number_3):
     # Ищем максимальное число из трех
-    numbers = [number_1, number_2, number_3]
-    big = max(numbers)
-    return big
+    result = max([number_1, number_2, number_3])
+    return result
 
 def ask_number():
     number = int(input("Введите число: "))
@@ -16,6 +15,6 @@ num_1 = ask_number()
 num_2 = ask_number()
 num_3 = ask_number()
 
-big = max_number(num_1, num_2, num_3)
-print(big)
+result = max_number(num_1, num_2, num_3)
+print(result)
 
