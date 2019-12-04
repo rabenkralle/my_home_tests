@@ -12,12 +12,13 @@ import math
 
 old_list = [1, -3, 4]
 result = old_list[:]
-print(result)
-# def copy_list(result, old):
-for i in old_list:
-    result = [math.sqrt(i) if i > 0 else i]
 
+def copy_list(old):
+    result = []
+    for i in old:
+        result.append(int(math.sqrt(i)) if i > 0 else i)
+    return result
 
-# result = [number for number in copy_list(result, old_list)]
+result = copy_list(old_list)
 print(old_list)
 print(result)
