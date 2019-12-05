@@ -21,5 +21,5 @@ def excep(question):
 try:
     number = excep("Введите число: ")
     print(number)
-except Exception:\
+except Exception:
     print('Что-то пошло не так')
