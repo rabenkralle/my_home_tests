@@ -14,8 +14,7 @@ def excep(question):
         if number == 13:
             raise ValueError("Число 13!!!")
         else:
-            number = number ** 2
-            return number
+            return number ** 2
 
 
 

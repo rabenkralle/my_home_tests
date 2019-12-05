@@ -10,13 +10,14 @@
 # Не забудьте включить туда отрицательные числа. 10-20 чисел в списке вполне достаточно.
 import math
 
-old_list = [1, -3, 4]
-result = old_list[:]
+old_list = [1, -3, 4, 5, 9, 15, 18]
+# result = old_list[:]
 
 def copy_list(old):
-    result = []
-    for i in old:
-        result.append(int(math.sqrt(i)) if i > 0 else i)
+    # result = []
+    result = [math.sqrt(number) if number > 0 else number for number in old]
+    # for i in old:
+    #     result.append(math.sqrt(i) if i > 0 else i)
     return result
 
 result = copy_list(old_list)
